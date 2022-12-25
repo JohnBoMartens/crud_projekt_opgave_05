@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/public/scripts/client.js" defer></script>
+    <link href="/public/styles/index.css" rel="stylesheet"/>
+    <title>Opret Bruger</title>
+  
+</head>
+<body>
+    <h1>Opdatér Bruger.</h1> 
+    <div class="status-bar">STATUS</div>
+    <div class="nav-bar"></div>
+    
+    <p>Vælg update i bruger listen så vi får et ID med i urlen.</p>
+
+    <form id="userUpdateForm">
+  
+        <label>Email
+            <input type="email" name="email" value="TestNavn@testemail.com" disabled>
+        </label>
+        <label>Brugernavn
+            <input type="text" name="username">
+        </label>
+        <label>Navn
+            <input type="text" name="name">
+        </label>
+        <label>City
+            <input type="text" name="city">
+        </label>
+        <label>Zip
+            <input type="text" name="zipcode">
+        </label>
+        <button type="submit">Opdatér Bruger</button>
+    </form>
+
+    <div class="list-users-container"></div>
+
+</body>
+</html>
